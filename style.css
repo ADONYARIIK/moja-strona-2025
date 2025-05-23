@@ -4,35 +4,51 @@ body {
     line-height: 1.6;
     background-color: #f4f7f9;
     color: #222;
-    margin: 0;
+    margin: 25vh 0 0 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #005a9c;
     color: white;
-    padding: 1em 2em;
+    padding: 1em 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 20vh;
+    opacity: 1;
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    position: relative;
+    left: 3%;
 }
 
 .header-info h1 {
     margin: 0;
     font-size: 1.2em;
+    position: relative;
+    right: 30%;
+}
+
+.header-info p {
+    position: relative;
+    right: 20%;
 }
 
 main {
     padding: 2em;
 }
 
-.main-content{
+.main-content {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -86,7 +102,9 @@ button:hover {
     margin-top: 1.5em;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer {
